@@ -3,10 +3,10 @@
 ## Introduction
 This is a  data-driven project that analyzes 426,000+ used cars data to predict prices and optimize dealership inventory decisions. We used the CRISP-D framework to analyze the data and then used it to identify a most suitable model using advanced regression techniques. We identified a model base don Ridge Regression and fine tuned the hyperparameters to achieve a error rate of 0.26 and also gathered valuable insights from the data that can drive decisions related to stocking the inventory to optimize sells.
 
-![Kurt](https://github.com/shirishswate/assignment_11-CarPricePrediction/blob/main/images/kurt.jpeg)
+![Kurt](https://github.com/shirishswate/CarPricePrediction-assignment-11/blob/main/images/kurt.jpeg)
 
 ## 🔍 Methodology: CRISP-DM Framework
-![CrispDM](https://github.com/shirishswate/assignment_11-CarPricePrediction/blob/main/images/crisp.png)
+![CrispDM](https://github.com/shirishswate/CarPricePrediction-assignment-11/blob/main/images/crisp.png)
 
 Following the CRISP-DM methodology, we systematically performed following steps:
 1. Understanding the business objectives
@@ -35,20 +35,20 @@ In order to address the above concers, this project is developed with following 
 * Outliers were removed by considering data between 10 - 99.9 percentile.
 * During the data understanding step, it was observed that the used car records are dominated by handful of brands. This is evident from the following chart
 
-![ChatManufacturer](https://github.com/shirishswate/assignment_11-CarPricePrediction/blob/main/images/cars_manu.png)
+![ChatManufacturer](https://github.com/shirishswate/CarPricePrediction-assignment-11/blob/main/images/cars_manu.png)
 * Next we looked at the best price performers base don "Fuel Type", "Condition of the car", "Transmission Type", "Manufacturer" "Paint color" and "Drive Type". Following charts shoe the price relation to hese categorical features. 
 
-![ChatFuelType](https://github.com/shirishswate/assignment_11-CarPricePrediction/blob/main/images/box_fuel_type.png)
+![ChatFuelType](https://github.com/shirishswate/CarPricePrediction-assignment-11/blob/main/images/box_fuel_type.png)
 
-![ChatCondition](https://github.com/shirishswate/assignment_11-CarPricePrediction/blob/main/images/box_condition.png)
+![ChatCondition](https://github.com/shirishswate/CarPricePrediction-assignment-11/blob/main/images/box_condition.png)
 
-![ChatTransimmisionType](https://github.com/shirishswate/assignment_11-CarPricePrediction/blob/main/images/box_transmission_type.png)
+![ChatTransimmisionType](https://github.com/shirishswate/CarPricePrediction-assignment-11/blob/main/images/box_transmission_type.png)
 
-![ChatManufacturer](https://github.com/shirishswate/assignment_11-CarPricePrediction/blob/main/images/box_manufactureres.png)
+![ChatManufacturer](https://github.com/shirishswate/CarPricePrediction-assignment-11/blob/main/images/box_manufactureres.png)
 
-![ChatPaintColor](https://github.com/shirishswate/assignment_11-CarPricePrediction/blob/main/images/box_paint.png)
+![ChatPaintColor](https://github.com/shirishswate/CarPricePrediction-assignment-11/blob/main/images/box_paint.png)
 
-![ChatDriveType](https://github.com/shirishswate/assignment_11-CarPricePrediction/blob/main/images/box_drive_type.png)
+![ChatDriveType](https://github.com/shirishswate/CarPricePrediction-assignment-11/blob/main/images/box_drive_type.png)
 
 
 ## Preparing data for modeling
@@ -60,7 +60,7 @@ This step involved using the cleaned data to prepaer for modeling.
 * Numerical features were scaled using StandardScaler. This ensured, the magnitude of the feature does not disproportionately affect the coeficient during regularization step.
 * After the categorical features were encoded and numerical features were scaled, correlaion matrix was created, to see which feature are more co-related to the price (price log in this case). Below correlation chart show this.
 
-![ChatCorr](https://github.com/shirishswate/assignment_11-CarPricePrediction/blob/main/images/corr.png)
+![ChatCorr](https://github.com/shirishswate/CarPricePrediction-assignment-11/blob/main/images/corr.png)
 
 
 ## Developing predictive models
@@ -93,7 +93,7 @@ Following table lists the MSEs and RMSEs calculated for each of the model option
 
 Following chart shows the predictions from each model against he actual values.
 
-![ChatPredict](https://github.com/shirishswate/assignment_11-CarPricePrediction/blob/main/images/scatter_pred_comp.png)
+![ChatPredict](https://github.com/shirishswate/CarPricePrediction-assignment-11/blob/main/images/scatter_pred_comp.png)
 
 ## Deployment of the insights and the choosen model.
 Based on the above analysis and model evaluation, best model was selected as Ridge Regression with alpha = 10. This Pipeline was fitted with the training set ( which is 80% of the data). Coefficients of each feature were captured and insights were developed. FOllowing are the observations and recommendations. 
@@ -117,4 +117,4 @@ Based on the above analysis and model evaluation, best model was selected as Rid
 * Try to stock up on cars from fast selling Brands such as "Toyota", "Fiat" and "Ram".
 * Aditionaly, usng the model developed above, implement a feature based pricing strategy to price the cars at a right point to maximize the chances of sell.
 
-[Link to notebook](https://github.com/shirishswate/assignment_11-CarPricePrediction/blob/main/prompt_II.ipynb)
+[Link to notebook](https://github.com/shirishswate/CarPricePrediction-assignment-11/blob/main/prompt_II.ipynb)
